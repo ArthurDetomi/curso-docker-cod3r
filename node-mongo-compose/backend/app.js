@@ -26,8 +26,5 @@ Client.updateOptions({ new: true, runValidators: true });
 // Routes
 Client.register(server, "/clients");
 
-// Teste
-server.get("/", (req, res, next) => res.send("Backend"));
-
-// Start server
+// Start Server
 server.listen(3000);
