@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Básico</title>
+
+    <style>
+      label {
+        display: block;
+      }
+      textarea,
+      input {
+        width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>E-mail Sender</h1>
+
+    <form action="http://localhost:8080" method="POST">
+      <div>
+        <label for="assunto">Assunto</label>
+        <input type="text" name="assunto" />
+      </div>
+
+      <div>
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" cols="50" rows="6"></textarea>
+      </div>
+
+      <div>
+        <button type="submit">Enviar !</button>
+      </div>
+    </form>
+  </body>
+</html>
